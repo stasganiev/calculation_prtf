@@ -1,0 +1,30 @@
+block config
+  - var lang = 'en'
+  - var keywords = ''
+  - var description = ''
+  - var pageTitle = 'Page title'
+  - var isScripts = true
+
+doctype html
+html(lang=lang)
+  head
+    block metatags
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible" content="TE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      if keywords
+        meta(name="keywords" content=keywords)
+      if description
+        meta(name="description" content=description)
+    title #{pageTitle}
+    block styles
+      link(href="css/app.min.css" rel="stylesheet")
+    block fonts
+      link(rel="preload" href="fonts/AmaticSC-Regular.woff2" as="font" crossorigin="anonymous")
+    block favicon
+      link(rel="shortcut icon" type="image/x-icon" href="img/logo16.png")
+  body
+    block content
+    block scripts
+      if isScripts
+        script(src='js/app.min.js')
