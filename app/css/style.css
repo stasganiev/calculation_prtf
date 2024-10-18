@@ -6,9 +6,6 @@ body {
   position: relative;
   margin: auto;
   display: block;
-
-  max-width: 50%;
-  max-height: 50%;
 }
 
 /****  ****/
@@ -34,6 +31,32 @@ body {
 /* Keyboard */
 /****  ****/
 
+/* Grid layout */
+
+.grid-parent {
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+/* .grid-child:nth-child(1) {
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+.grid-child:nth-child(2) {
+  grid-area: 1 / 2 / 1 / 2;
+}
+
+.grid-child:nth-child(3) {
+  grid-area: 1 / 3 / 1 / 3;
+}
+
+.grid-child:nth-child(4) {
+  grid-area: 1 / 4 / 1 / 4;
+} */
+
+/* Keyboard content */
+
 .keyboard-area {
   position: relative;
   border: 2px #abc solid;
@@ -41,13 +64,11 @@ body {
   padding: 10px;
   width: 100%;
   height: 100%;
+  margin: auto auto;
 }
 
 .keyboard-wrap {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .btn-area {
@@ -70,5 +91,4 @@ body {
 .btn-title {
   margin: 0;
   padding: 0;
-
 }

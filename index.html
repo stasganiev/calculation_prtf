@@ -25,11 +25,14 @@
 
   <main class="main">
     <div class="display-area">
-      <div class="display-wrap">999.99</div>
+      <div class="display-input-wrap">
+        <label class="display-input-labem" for="display-input-result">Результат расчета</label>
+        <input class="display-input-input" type="text" id="display-input-result" name="display-input-data" value="" placeholder="= %">
+      </div>
     </div>
     <div class="keyboard-area">
-      <div class="keyboard-wrap">
-        <div class="btn-area">
+      <div class="grid-parent keyboard-wrap">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-c" type="button" alt="Очистить">
               C
@@ -37,7 +40,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-v" type="button" alt="Корень">
               V
@@ -45,7 +48,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-p" type="button" alt="Процент">
               %
@@ -53,7 +56,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-d" type="button" alt="Деление">
               :
@@ -61,7 +64,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-7" type="button" alt="7">
               7
@@ -69,7 +72,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-8" type="button" alt="8">
               8
@@ -77,7 +80,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-9" type="button" alt="9">
               9
@@ -85,7 +88,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-m" type="button" alt="Умножение">
               *
@@ -93,7 +96,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-4" type="button" alt="4">
               4
@@ -101,7 +104,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-5" type="button" alt="5">
               5
@@ -109,7 +112,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-6" type="button" alt="6">
               6
@@ -117,7 +120,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-s" type="button" alt="Вычитание">
               -
@@ -125,7 +128,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-1" type="button" alt="1">
               1
@@ -133,7 +136,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-2" type="button" alt="2">
               2
@@ -141,7 +144,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-3" type="button" alt="3">
               3
@@ -149,7 +152,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-a" type="button" alt="Сложение">
               +
@@ -157,7 +160,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-t" type="button" alt="Сменить знак">
               +/-
@@ -165,7 +168,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-0" type="button" alt="0">
               0
@@ -173,7 +176,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-pnt" type="button" alt="Десятичная точка">
               .
@@ -181,7 +184,7 @@
             </button>
           </div>
         </div>
-        <div class="btn-area">
+        <div class="grid-child btn-area">
           <div class="btn-wrap">
             <button class="btn-calc btn-calc-eq" type="button" alt="Результат">
               =
